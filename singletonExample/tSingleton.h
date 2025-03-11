@@ -11,5 +11,6 @@ class tSingleton
 public:
 	static tSingleton* getInstance(const std::string& value);
 	std::string getValue();
+	tSingleton(tSingleton const&) = delete;
+	tSingleton& operator =(tSingleton const&) = delete;
 };
-

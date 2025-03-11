@@ -9,4 +9,5 @@ public:
 	static gofSingleton* getInstance(const std::string& value);
 	std::string getValue();
 	gofSingleton(gofSingleton const&) = delete;
+	gofSingleton& operator =(gofSingleton const&) = delete;
 };

@@ -7,7 +7,9 @@ class gofSingleton
 	static gofSingleton* instance;
 	gofSingleton(std::string const& v) :value{ v } {}
 public:
-	static gofSingleton& getInstance(const std::string& value);
+	static gofSingleton& getInstance(std::string const& value);
 	std::string getValue();
+	gofSingleton(gofSingleton const&) = delete;
+	gofSingleton& operator =(gofSingleton const&) = delete;
 };
 

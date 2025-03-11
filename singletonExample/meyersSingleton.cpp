@@ -1,6 +1,6 @@
 #include "meyersSingleton.h"
 
-meyersSingleton* meyersSingleton::getInstance(const std::string& value)
+meyersSingleton* meyersSingleton::getInstance(std::string const& value)
 {
     static meyersSingleton instance{ value };
     return &instance;

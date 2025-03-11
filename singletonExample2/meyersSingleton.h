@@ -8,5 +8,7 @@ class meyersSingleton
 public:
 	static meyersSingleton& getInstance(std::string const& value);
 	std::string getValue();
+	meyersSingleton(meyersSingleton const&) = delete;
+	meyersSingleton& operator =(meyersSingleton const&) = delete;
 };
 

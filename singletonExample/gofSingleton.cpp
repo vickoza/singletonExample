@@ -1,7 +1,7 @@
 
 #include "gofSingleton.h"
 
-gofSingleton* gofSingleton::getInstance(const std::string& value)
+gofSingleton* gofSingleton::getInstance(std::string const& value)
 {
 	if (instance == nullptr)
 		instance = new gofSingleton(value);

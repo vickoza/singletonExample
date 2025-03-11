@@ -1,6 +1,6 @@
 #include "tSingleton.h"
 
-tSingleton* tSingleton::getInstance(const std::string& value)
+tSingleton* tSingleton::getInstance(std::string const& value)
 {
 	if (instance == nullptr)
 	{
