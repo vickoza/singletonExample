@@ -3,6 +3,7 @@
 meyersSingleton* meyersSingleton::getInstance(std::string const& value)
 {
     static meyersSingleton instance{ value };
+    ++instance.count;//new
     return &instance;
 }
 

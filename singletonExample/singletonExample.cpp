@@ -64,6 +64,10 @@ int main()
         std::jthread t5{ ThreadFoo };
         std::jthread t6{ ThreadBar };
     }
+    auto tsin = tSingleton::getInstance("BAZ");//new
+    std::cout << tsin->getValue() <<"<=>"<< tSingleton::getCount(tsin) << "\n";//new
+    auto msin = meyersSingleton::getInstance("BAZ");//new
+    std::cout << msin->getValue() << "<=>" << meyersSingleton::getCount(msin) << "\n";//new
     std::cout << "Hello World!\n";
 }
 

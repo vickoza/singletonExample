@@ -8,6 +8,7 @@ tSingleton* tSingleton::getInstance(std::string const& value)
 		if (instance == nullptr)
 			instance = new tSingleton(value);
 	}
+	++(instance->count);//new
 	return instance;
 }
 
